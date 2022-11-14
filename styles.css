@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -34,4 +36,49 @@ header{
 }
 .navLinks li a:hover{
     color: #0088a9;
+}
+
+/* image under header */
+.container{
+    position: relative;
+    text-align: left;
+}
+.leftText{
+    position: absolute;
+    top: 20%;
+    left: 100px;
+    font-size: 50px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+.leftButton button{
+    position: absolute;
+    top: 60%;
+    left: 300px;
+    height: 50px;
+    width: 150px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.leftButton button:hover{
+    background-color: rgba(0, 136, 169, 0.8);
+}
+.rightButton button{
+    position: absolute;
+    top: 60%;
+    left: 100px;
+    height: 50px;
+    width: 150px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: black;
+}
+.rightButton button:hover{
+    background-color: rgba(0, 136, 169, 0.8);
+    color: white;
 }
