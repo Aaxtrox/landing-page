@@ -191,3 +191,61 @@ header{
     font-size: 18px;
     font-weight: 300;
 }
+
+/* section 4 */
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0px;
+}
+.contactContainerTitle{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+.contactContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    width: 30%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.contactContainerText{
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.contactContainerForm{
+    display: flex;
+    flex-direction: row;
+}
+.fillForm{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.sendButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+.sendButton button{
+    height: 40px;
+    width: 110px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.sendButton button:hover{
+    background-color: rgba(0, 136, 169, 0.8);
+}
