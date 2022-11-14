@@ -296,3 +296,14 @@ a{
     text-decoration: none;
     color: #fff;
 }
+
+/* media queries */
+
+@media screen and (max-width: 1800px) {
+    /* section 2 */
+    .projectsContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
