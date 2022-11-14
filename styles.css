@@ -122,3 +122,42 @@ header{
     font-size: 18px;
     font-weight: 500;
 }
+
+/* section 2 */
+.projects{
+    margin: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.projectsTitle{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+.projectsText{
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 60px;
+}
+.projectsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.projectsContainerItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 80px;
+    padding: 3px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+.projectsContainerItemImg{
+    width: auto;
+    height: 300px;
+}
