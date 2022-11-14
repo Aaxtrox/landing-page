@@ -329,3 +329,26 @@ a{
         margin: 0px;
     }
 }
+
+@media screen and (max-width: 1100px) {
+    /* section 1 */
+    .servicesContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    /* section 2 */
+    .projectsContainer{
+        gap: 20px;
+    }
+    /* section 4 */
+    .contactContainerForm{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .sendButton{
+        margin: 0px;
+    }
+
+}
