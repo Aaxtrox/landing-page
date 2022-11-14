@@ -350,5 +350,97 @@ a{
     .sendButton{
         margin: 0px;
     }
+}
 
+@media screen and (max-width: 900px) {
+    /* image under header */
+    .leftText{
+        font-size: 20px;
+        left: 30px;
+    }
+    .leftButton button {
+        height: 30px;
+        width: 110px;
+        left: 200px;
+    }
+    .rightButton button {
+        height: 30px;
+        width: 110px;
+        left: 30px;
+    }
+    .logo{
+        max-height: 30px;
+        max-width: auto;
+    }
+    /* section 1 */
+    .servicesTitle{
+        font-size: 18px;
+    }
+    .servicesText{
+        font-size: 16px;
+        margin-bottom: 45px;
+    }
+    .servicesContainerItemTitle{
+        font-size: 15px;
+    }
+    .services{
+        margin: 65px 0px;
+    }
+    /* section 2 */
+    .projectsTitle{
+        font-size: 18px;
+    }
+    .projectsText{
+        font-size: 16px;
+        margin-bottom: 45px;
+    }
+    .projectsContainer{
+        gap: 20px;
+    }
+    .projectsContainerItem{
+        margin: 0px 20px;
+    }
+    .projects{
+        margin: 65px 0px;
+    }
+    /* section 3 */
+    .aboutUs{
+        font-size: 18px;
+        margin-bottom: 45px;
+    }
+    .aboutUsContainerText{
+        font-size: 15px;
+        text-align: center;
+        margin: 0px;
+    }
+    .aboutUsContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .about{
+        margin: 65px 0px;
+    }
+    /* section 4 */
+    .contactContainerTitle{
+        font-size: 18px;
+        margin-bottom: 45px;
+    }
+    .contactContainerText{
+        font-size: 15px;
+    }
+    .contactContainerForm{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .sendButton{
+        margin: 0px;
+    }
+    .contact{
+        margin: 65px 0px;
+    }
+    .footer{
+        font-size: 20px;
+    }
 }
