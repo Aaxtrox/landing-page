@@ -161,3 +161,33 @@ header{
     width: auto;
     height: 300px;
 }
+
+/* section 3 */
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 0px;
+}
+.aboutUs{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+.aboutUsContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aboutUsContainerImage{
+    width: 200px;
+    height: auto;
+}
+.aboutUsContainerText{
+    display: flex;
+    max-width: 30%;
+    margin-left: 60px;
+    font-size: 18px;
+    font-weight: 300;
+}
