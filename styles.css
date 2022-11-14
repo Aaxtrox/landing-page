@@ -307,3 +307,25 @@ a{
         gap: 20px;
     }
 }
+
+
+@media screen and (max-width: 1400px) {
+    /* image under header */
+    .leftText{
+        font-size: 30px;
+    }
+    /* section 2 */
+    .projectsContainer{
+        gap: 20px;
+    }
+    /* section 4 */
+    .contactContainerForm{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    /* section 4 */
+    .sendButton{
+        margin: 0px;
+    }
+}
