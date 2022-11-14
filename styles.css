@@ -444,3 +444,88 @@ a{
         font-size: 20px;
     }
 }
+
+@media screen and (max-width: 600px) {
+    /* header */
+    .navLinks li a{
+        font-size: 14px;
+    }
+    /* image under header */
+    .leftText{
+        font-size: 15px;
+        left: 10px;
+    }
+    .leftButton button {
+        height: 30px;
+        width: 110px;
+        left: 150px;
+    }
+    .rightButton button {
+        height: 30px;
+        width: 110px;
+        left: 10px;
+    }
+    /* section 1 */
+    .servicesTitle{
+        font-size: 14px;
+    }
+    .servicesText{
+        font-size: 13px;
+        margin-bottom: 30px;
+    }
+    .servicesContainerItemTitle{
+        font-size: 13px;
+    }
+    .services{
+        margin: 50px 0px;
+    }
+    /* section 2 */
+    .projectsTitle{
+        font-size: 14px;
+    }
+    .projectsText{
+        font-size: 13px;
+        margin-bottom: 30px;
+    }
+    .projects{
+        margin: 50px 0px;
+    }
+    .projectsContainer{
+        gap: 15px;
+    }
+    .projectsContainerItem{
+        margin: 0px 10px;
+    }
+    /* section 3 */
+    .aboutUs{
+        font-size: 14px;
+    }
+    .aboutUsContainerText{
+        font-size: 13px;
+        text-align: center;
+        margin: 0px;
+    }
+    .aboutUsContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    /* section 4 */
+    .contactContainerTitle{
+        font-size: 14px;
+    }
+    .contactContainerText{
+        font-size: 13px;
+    }
+    .contactContainerForm{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    /* footer */
+    footer{
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+    }
+}
