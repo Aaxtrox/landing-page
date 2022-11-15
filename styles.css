@@ -448,47 +448,53 @@ a{
 @media screen and (max-width: 600px) {
     /* header */
     .navLinks li a{
-        font-size: 14px;
+        font-size: 12px;
     }
     /* image under header */
     .leftText{
-        font-size: 15px;
-        left: 10px;
+        font-size: 13px;
+        left: 7px;
     }
     .leftButton button {
-        height: 30px;
-        width: 110px;
-        left: 150px;
+        height: 25px;
+        width: 95px;
+        left: 120px;
     }
     .rightButton button {
-        height: 30px;
-        width: 110px;
-        left: 10px;
+        height: 25px;
+        width: 95px;
+        left: 7px;
     }
     /* section 1 */
     .servicesTitle{
-        font-size: 14px;
+        font-size: 13px;
     }
     .servicesText{
-        font-size: 13px;
-        margin-bottom: 30px;
+        font-size: 12px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .servicesContainerItem{
+        margin: 0px 10px;
+        padding: 50px 30px;
     }
     .servicesContainerItemTitle{
-        font-size: 13px;
+        font-size: 12px;
     }
     .services{
-        margin: 50px 0px;
+        margin: 30px 0px;
     }
     /* section 2 */
     .projectsTitle{
-        font-size: 14px;
+        font-size: 13px;
     }
     .projectsText{
-        font-size: 13px;
-        margin-bottom: 30px;
+        font-size: 12px;
+        margin-bottom: 20px;
+        text-align: center;
     }
     .projects{
-        margin: 50px 0px;
+        margin: 30px 0px;
     }
     .projectsContainer{
         gap: 15px;
@@ -498,10 +504,11 @@ a{
     }
     /* section 3 */
     .aboutUs{
-        font-size: 14px;
+        font-size: 13px;
+        margin-bottom: 20px;
     }
     .aboutUsContainerText{
-        font-size: 13px;
+        font-size: 12px;
         text-align: center;
         margin: 0px;
     }
@@ -510,21 +517,32 @@ a{
         flex-direction: column;
         gap: 20px;
     }
+    .about{
+        margin: 30px 0px;
+    }
     /* section 4 */
     .contactContainerTitle{
-        font-size: 14px;
+        font-size: 13px;
+        margin-bottom: 20px;
     }
     .contactContainerText{
-        font-size: 13px;
+        font-size: 12px;
     }
     .contactContainerForm{
         display: flex;
         flex-direction: column;
         gap: 10px;
     }
+    .contact{
+        margin: 30px 0px;
+    }
+    .contactContainer{
+        padding: 20px 50px;
+    }
     /* footer */
     footer{
-        font-size: 14px;
+        font-size: 13px;
+        text-align: center;
         display: flex;
         flex-direction: column;
     }
