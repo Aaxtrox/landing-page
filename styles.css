@@ -112,7 +112,7 @@ header{
     margin: 0px 100px;
     padding: 80px 40px;
     border-radius: 10px;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 20px black;
 }
 .servicesContainerItemImg{
     width: auto;
@@ -143,23 +143,74 @@ header{
 }
 .projectsContainer{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
 }
-.projectsContainerItem{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0px 80px;
-    padding: 3px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
-    background-color: white;
-}
-.projectsContainerItemImg{
-    width: auto;
+.card{
     height: 300px;
+    margin: 0px 50px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+    position: relative;
+}
+.card img{
+    height: 300px;
+    width: 590px;
+    border-radius: 3px;
+}
+.intro{
+    height: 70px;
+    width: 590px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    background: rgb(27, 27, 27, 0.5);
+    color: white;
+    transition: .5s;
+}
+h1{
+    margin: 10px;
+    font-size: 30px;
+}
+.card p{
+    margin: 10px;
+    font-size: 15px;
+    visibility: hidden;
+    opacity: 0;
+}
+span{
+    font-weight: bold;
+}
+.projectButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card button{
+    height: 30px;
+    width: 90px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: black;
+}
+.card:hover{
+    cursor: pointer;
+}
+.card:hover .intro{
+    height: 180px;
+    background: black;
+}
+.card:hover p{
+    opacity: 1;
+    visibility: visible;
+}
+.card:hover img{
+    transform: scale(1.1) rotate(-3deg);
+}
+.card button:hover{
+    background-color: rgba(0, 136, 169, 0.8);
 }
 
 /* section 3 */
@@ -215,7 +266,7 @@ header{
     background-color: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 20px black;
 }
 .contactContainerText{
     font-size: 20px;
@@ -298,17 +349,6 @@ a{
 }
 
 /* media queries */
-
-@media screen and (max-width: 1800px) {
-    /* section 2 */
-    .projectsContainer {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-}
-
-
 @media screen and (max-width: 1400px) {
     /* image under header */
     .leftText{
@@ -316,15 +356,14 @@ a{
     }
     /* section 2 */
     .projectsContainer{
+        flex-direction: column;
         gap: 20px;
     }
     /* section 4 */
     .contactContainerForm{
-        display: flex;
         flex-direction: column;
         gap: 10px;
     }
-    /* section 4 */
     .sendButton{
         margin: 0px;
     }
@@ -333,7 +372,6 @@ a{
 @media screen and (max-width: 1100px) {
     /* section 1 */
     .servicesContainer{
-        display: flex;
         flex-direction: column;
         gap: 20px;
     }
@@ -343,7 +381,6 @@ a{
     }
     /* section 4 */
     .contactContainerForm{
-        display: flex;
         flex-direction: column;
         gap: 10px;
     }
@@ -387,6 +424,9 @@ a{
         margin: 65px 0px;
     }
     /* section 2 */
+    .projects{
+        margin: 65px 0px;
+    }
     .projectsTitle{
         font-size: 18px;
     }
@@ -397,11 +437,14 @@ a{
     .projectsContainer{
         gap: 20px;
     }
-    .projectsContainerItem{
-        margin: 0px 20px;
+    .intro{
+        height: 50px;
     }
-    .projects{
-        margin: 65px 0px;
+    h1{
+        font-size: 18px;
+    }
+    .card p{
+        font-size: 15px;
     }
     /* section 3 */
     .aboutUs{
@@ -414,7 +457,6 @@ a{
         margin: 0px;
     }
     .aboutUsContainer{
-        display: flex;
         flex-direction: column;
         gap: 20px;
     }
@@ -430,7 +472,6 @@ a{
         font-size: 15px;
     }
     .contactContainerForm{
-        display: flex;
         flex-direction: column;
         gap: 10px;
     }
@@ -485,6 +526,9 @@ a{
         margin: 30px 0px;
     }
     /* section 2 */
+    .projects{
+        margin: 30px 0px;
+    }
     .projectsTitle{
         font-size: 13px;
     }
@@ -493,15 +537,36 @@ a{
         margin-bottom: 20px;
         text-align: center;
     }
-    .projects{
-        margin: 30px 0px;
-    }
     .projectsContainer{
         gap: 15px;
     }
-    .projectsContainerItem{
-        margin: 0px 10px;
+    .card{
+        margin: 0px;
+        height: 153px;
     }
+    .card img{
+        height: 153px;
+        width: auto;
+    }
+    h1{
+        font-size: 13px;
+        margin: 5px;
+    }
+    .intro{
+        height: 40px;
+    }
+    .card:hover .intro{
+        height: 153px;
+    }
+    .card p{
+        font-size: 12px;
+        margin: 5px;
+    }
+    .card button{
+        height: 25px;
+        width: 80px;
+    }
+
     /* section 3 */
     .aboutUs{
         font-size: 13px;
@@ -513,7 +578,6 @@ a{
         margin: 0px;
     }
     .aboutUsContainer{
-        display: flex;
         flex-direction: column;
         gap: 20px;
     }
@@ -529,7 +593,6 @@ a{
         font-size: 12px;
     }
     .contactContainerForm{
-        display: flex;
         flex-direction: column;
         gap: 10px;
     }
@@ -543,7 +606,6 @@ a{
     footer{
         font-size: 13px;
         text-align: center;
-        display: flex;
         flex-direction: column;
     }
 }
